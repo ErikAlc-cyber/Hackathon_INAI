@@ -3,7 +3,7 @@ Proyecto completo para el Hackathon creado por el INAI
 
 ---
 
-Programador:Erik Alcantara Covarrubias y Jose Uriel Ramirez Rodriguez
+Programador:Erik Alcantara Covarrubias y Jose Uriel Rodríguez Ramírez 
 
 ---
 
