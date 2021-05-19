@@ -10,9 +10,12 @@
     </div>
     <div class="Cuerpo">
       <a href="http://www.snt.org.mx/"><img src="imagenes/boton 3.png" alt="DirPNT"></a>
+      <a href="views/views.php">Ver Registros</a>
     </div>
     <div class="Pie">
 
     </div>
+
+
   </body>
 </html>

@@ -18,5 +18,19 @@
     <table>
 
     </table>
+ 
+
+
+<?php
+      
+      foreach ($dato as $va ):
+          echo "<tr><td><a href='views.php?m=mostrar_uno&id=".$va['id_vacante']."'>".$va['id_vacante']."</a></td><td>".$va['Sujeto_Obligado']."</td><td>S./".$va['Fecha_Modif']."</td>";
+        echo "<td><a href='index.php?m=editar&id=".$va['id_vacante']."'>ACTUALIZAR</a> <a href='index.php?m=eliminar&id=".$va['id_vacante']."'>ELIMINAR</a></td>";
+        echo "</tr>";
+      endforeach;
+
+?>
+
+
   </body>
 </html>

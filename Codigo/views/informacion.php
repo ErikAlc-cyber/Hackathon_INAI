@@ -9,5 +9,14 @@
 <body>
         <h4> mostramos la informacion de la vacante  </h4>
         <h4> Mostrar Contacto  </h4>
+
+        <?php
+            foreach ($dato as $key => $value)
+	        foreach ($value as $va ):
+               echo "<h1>".$va['id_vacante']."</h1>";
+               print_r($va);
+               echo "<h3><a href='views.php?m=mostrar_contacto&id=".$va['id_contacto']."'>Contacto - ".$va['id_contacto']."</a></h3>";
+            endforeach
+        ?>
 </body>
 </html>
