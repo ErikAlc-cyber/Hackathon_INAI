@@ -21,7 +21,7 @@ li {
 }
 
 p{
-  
+
 }
 
 li a {
@@ -42,6 +42,8 @@ li a:hover:not(.active) {
 
 .button{
   background-color: #EE82EE;
+  border-style: solid;
+  border-color: #DD3EF3;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -57,4 +59,32 @@ li a:hover:not(.active) {
 
 .logo{
 
+}
+
+div.articulo{
+  border-style: solid;
+  border-width: 2px;
+  border-color: #EE82EE;
+  border-radius: 5px;
+  box-shadow: 10px 10px 5px grey;
+  text-align: center;
+  font-size: 1vw;
+  font-weight: bold;
+  margin-top: 50px;
+  font-family: Tahoma, Verdana, sans-serif;
+}
+
+div.menu{
+  border-radius: 5px;
+  background-color: #EE82EE;
+  color: white;
+  text-align: center;
+  font-size: 1vw;
+  font-weight: bold;
+  margin-top: 50px;
+  font-family: Tahoma, Verdana, sans-serif;
+}
+
+p{
+  font-weight: normal;
 }

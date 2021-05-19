@@ -20,15 +20,16 @@
       <li><a href="http://www.snt.org.mx/">SNT</a></li>
       <li><a href="http://www.snt.org.mx/index.php/consejo-nacional/acuerdos">Extras</a></li>
   </ul>
-
-    <p>Filtros:</p>
-    <form action="DNE.php" method="post">
-      <label for="Estado">Estado:</label><br>
-      <input type="text" id="txtEst" value=""><br>
-      <label for="Area">Area:</label><br>
-      <input type="text" id="txtArea" value=""><br><br>
-      <button class="button">Buscar</button>
-    </form>
+  <div class="menu">
+      <p>Filtros:</p>
+      <form action="DNE.php" method="post">
+        <label for="Estado">Estado:</label><br>
+        <input type="text" id="txtEst" value=""><br>
+        <label for="Area">Area:</label><br>
+        <input type="text" id="txtArea" value=""><br><br>
+        <button class="button">Buscar</button>
+      </form>
+  </div>
     <table>
 
     </table>
