@@ -23,7 +23,7 @@ class Modelo{
             return $this->vacante;
 
         }else{
-            echo "Todos";
+            
             $general_consul = "select * from ".$tabla.";";
             $resu = $this->db->query($general_consul);
             $this->vacantes = $resu->FETCHALL(PDO::FETCH_ASSOC);
@@ -40,7 +40,7 @@ class Modelo{
         while($fila_contact = $resul_contact->FETCHALL(PDO::FETCH_ASSOC)) {
             $this->contacto[]=$fila_contact;
         }
-        echo "Contacto";
+        
         return $this->contacto;
 
     }
