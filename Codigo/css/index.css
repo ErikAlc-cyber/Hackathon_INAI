@@ -39,7 +39,7 @@ li a:hover:not(.active) {
   background-color: #EE82EE;
   border-style: solid;
   border-color: #DD3EF3;
-  border: none;
+  border-width: 3px;
   color: white;
   padding: 15px 32px;
   text-align: center;
@@ -78,6 +78,7 @@ div.menu{
 
 table.datos{
   border-collapse: collapse;
+  margin-top: 50px;
   width: 100%;
   text-align: center;
 }
@@ -89,6 +90,13 @@ th{
 
 p{
   font-weight: normal;
+}
+
+select{
+  font-size: 0.90vW;
+  background-color: #FB20FB;
+  border: 6px solid transparent;
+  color: white;
 }
 
 tr:nth-child(even) {
