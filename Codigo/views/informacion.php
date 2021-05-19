@@ -5,19 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/index.css">
 </head>
 <body>
-        <h4> mostramos la informacion de la vacante  </h4>
-        <h4> Mostrar Contacto  </h4>
-
         <?php
-            foreach ($dato as $key => $value)
-	        foreach ($value as $va ):
-               echo "<h1>".$va['id_vacante']."</h1>";
+          foreach ($dato as $key => $value)
+	         foreach ($value as $va ):
+               echo "<h1>".$va['Sujeto_Obligado']."</h1>";
                //Esta impresion solo se usa para  ver si los datos pasan a la vista correctamente
-               print_r($va);
+               //print_r($va);
                //IMPORTANTE: Cuidado al modificar este enlace ya que envia el nombre del metodo y la id para mostrar el contacto a nuestro views.php  y asigne la vista correcta
-               echo "<h3><a href='views.php?m=mostrar_contacto&id=".$va['id_contacto']."'>Contacto - ".$va['id_contacto']."</a></h3>";
+               echo "<h3><a href='views.php?m=mostrar_contacto&id=".$va['id_contacto']."'>Contacto</a></h3>";
             endforeach
         ?>
 </body>
