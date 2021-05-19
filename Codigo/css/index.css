@@ -19,11 +19,6 @@ ul {
 li {
   float: left;
 }
-
-p{
-
-}
-
 li a {
   display: block;
   color: black;
@@ -44,7 +39,7 @@ li a:hover:not(.active) {
   background-color: #EE82EE;
   border-style: solid;
   border-color: #DD3EF3;
-  border: none;
+  border-width: 3px;
   color: white;
   padding: 15px 32px;
   text-align: center;
@@ -55,10 +50,6 @@ li a:hover:not(.active) {
 
 .button:hover {
   background-color: #DD3EF3;
-}
-
-.logo{
-
 }
 
 div.articulo{
@@ -85,6 +76,29 @@ div.menu{
   font-family: Tahoma, Verdana, sans-serif;
 }
 
+table.datos{
+  border-collapse: collapse;
+  margin-top: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+th{
+  background-color: #EE82EE;
+  color: white;
+}
+
 p{
   font-weight: normal;
+}
+
+select{
+  font-size: 0.90vW;
+  background-color: #FB20FB;
+  border: 6px solid transparent;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
