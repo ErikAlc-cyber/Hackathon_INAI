@@ -3,14 +3,15 @@
 class Modelo{
     private $Modelo;
     private $db;
-  
+  //CONSTRUCTOR
     public function __construct(){
         $this->Modelo = array();
         $this->db=new PDO('mysql:host=localhost;dbname=dne',"root","");
         
     }
-
+//MUESTRA DE INFORMACION 
     public function mostrar($tabla,$condicion = ""){
+        //CONDICION PARA MOESTRAR SOOLO UNO O MAS DATOS 
         if($condicion != ""){
 
             $consul_uniq="select * from ".$tabla." where id_vacante = ".$condicion.";";
@@ -31,7 +32,7 @@ class Modelo{
         } 
 
         } 
-
+//MUESTRA DE LA INFORMACION DE CONTACTO SEGUN LA ID DE LA VACANTE
     public function mostrar_contacto($tabla, $id_contacto){
         
         $consul_contact="select * from ".$tabla." where id_contacto = ".$id_contacto.";";

@@ -12,6 +12,7 @@
         foreach ($dato as $key => $value)
         foreach ($value as $va ):
            echo "<h1>".$va['id_contacto']."</h1>";
+           //Esta impresion solo se usa para  ver si los datos pasan a la vista correctamente
            print_r($va);
            
         endforeach

@@ -6,30 +6,33 @@ class modeloController{
         $this->model=new Modelo();
     }
 
-    // MOSTRAR
+//MUESTRA DE TODAS LAS VACANTES
     function vista(){
     	$vacantes 	=	new Modelo();
 		$dato = $vacantes->mostrar("VACANTE");
 		require_once("DNE.php");
     }
+//MUESTRA DE LOS DATOS DE LA VACANTE
 	function mostrar_uno($id_vacante){
 		$vacante = new Modelo();
 		$dato = $vacante->mostrar("VACANTE","$id_vacante");
 		require_once("informacion.php");
 	}
-
+//MUESTRA DE LA TABLA DE CONTACTOS
 	function mostrar_contacto($id_contacto){
 		$contacto = new Modelo();
 		$dato = $contacto->mostrar_contacto("CONTACTO","$id_contacto");
 		require_once("contacto.php");
 	}
 
+	//MUESTRA DE LA VISTA INDEX
     function index(){
+
     	
 		require_once("index.php");
     }
 /*
-    // INSERTAR
+    // ESTRUCTURA CRUD SIN USAR
     function nuevo(){
     	require_once("vista/nuevo.php");	    	    	
     }
@@ -64,7 +67,7 @@ class modeloController{
 		$dato 		=	$producto->actualizar("productos",$data,$condicion);
         header("location:".urlsite);
 	}
- */
+ 
     // ELIMINAR
 
 	function eliminar(){		
@@ -74,4 +77,6 @@ class modeloController{
 		$dato 		=	$producto->eliminar("productos",$condicion);
 		header("location:".urlsite);
 	}
+
+	*/
 }
