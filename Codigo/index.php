@@ -6,18 +6,19 @@
     <title>DNE</title>
   </head>
   <body>
-      <h1>Directorio Nacional de Empleo</h1>
-    <table>
-      <tr>
-        <td><a href="views/DNE.php"><img src="../Documentacion/imagenes/bonton 1.png" alt="Principal"></a></td>
-      </tr>
-      <tr>
-        <td><a href="../Documentacion/InvestigacionPNT.pdf" donwload="InvestigacionPNT"><img src="../Documentacion/imagenes/boton 2.png" alt="Donwload"></a></td>
-      </tr>
-      <tr>
-        <td><a href="http://www.snt.org.mx/"><img src="../Documentacion/imagenes/boton 3.png" alt="PrinPNT"></a></td>
-        <td><a href="http://www.snt.org.mx/index.php/consejo-nacional/acuerdos"><img src="../Documentacion/imagenes/boton 4.png" alt="InfoPNT"></a></td>
-      </tr>
+    <h1>
+    <table align="center">
+      <td><img src="../Documentacion/imagenes/titulo.png" alt="Logo" class="logo"></td>
+      <td><p class="titulo">Directorio Nacional de Empleo</p></td>
     </table>
+    </h1>
+
+      <ul>
+        <li><a class="active" href="#home">Pagina Principal</a></li>
+        <li> <a href="views/DNE.php">DNE</a></li>
+        <li><a href="../Documentacion/InvestigacionPNT.pdf">Covid-19</a></li>
+        <li><a href="http://www.snt.org.mx/">SNT</a></li>
+        <li><a href="http://www.snt.org.mx/index.php/consejo-nacional/acuerdos">Extras</a></li>
+    </ul>
   </body>
 </html>
