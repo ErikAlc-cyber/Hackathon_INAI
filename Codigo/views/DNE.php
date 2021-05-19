@@ -8,7 +8,7 @@
     <h1>Menu Principal</h1>
 
     <p>Filtros:</p>
-    <form action="../php/index.php" method="post">
+    <form action="DNE.php" method="post">
       <label for="Estado">Estado:</label><br>
       <input type="text" id="txtEst" value=""><br>
       <label for="Area">Area:</label><br>
