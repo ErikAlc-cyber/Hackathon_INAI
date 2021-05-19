@@ -19,11 +19,6 @@ ul {
 li {
   float: left;
 }
-
-p{
-
-}
-
 li a {
   display: block;
   color: black;
@@ -57,10 +52,6 @@ li a:hover:not(.active) {
   background-color: #DD3EF3;
 }
 
-.logo{
-
-}
-
 div.articulo{
   border-style: solid;
   border-width: 2px;
@@ -85,6 +76,21 @@ div.menu{
   font-family: Tahoma, Verdana, sans-serif;
 }
 
+table.datos{
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+}
+
+th{
+  background-color: #EE82EE;
+  color: white;
+}
+
 p{
   font-weight: normal;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
