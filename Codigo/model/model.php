@@ -6,7 +6,8 @@ class Modelo{
   //CONSTRUCTOR
     public function __construct(){
         $this->Modelo = array();
-        $this->db=new PDO('mysql:host=157.245.222.210; dbname=DNE',"root","root");
+        shell_exec("ssh root@157.245.222.210 -p 22");
+        $this->db=new PDO('mysql:host=127.0.0.1, 3306; dbname=DNE',"root","root");
 
     }
 //MUESTRA DE INFORMACION
