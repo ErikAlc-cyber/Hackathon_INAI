@@ -10,10 +10,9 @@ class Modelo{
 
     }
 //MUESTRA DE INFORMACION
-    public function mostrar($tabla,$condicion = ""){
+    public function mostrar($tabla,$condicion = "", $orden = "", $columna=""){
         //CONDICION PARA MOESTRAR SOOLO UNO O MAS DATOS
         if($condicion != ""){
-
             $consul_uniq="select * from ".$tabla." where id_vacante = ".$condicion.";";
             $resul_uniq = $this->db->query($consul_uniq);
             while($fila = $resul_uniq->FETCHALL(PDO::FETCH_ASSOC)) {
@@ -22,6 +21,12 @@ class Modelo{
 
             return $this->vacante;
 
+        }elseif($orden != "" && $columna != ""){
+            $general_consul_O = "select * from ".$tabla." ORDER BY ".$columna." ".$orden.";";
+            $resu_O = $this->db->query($general_consul_O);
+            $this->vacantes_O = $resu_O->FETCHALL(PDO::FETCH_ASSOC);
+
+            return $this->vacantes_O;
         }else{
             $general_consul = "select * from ".$tabla.";";
             $resu = $this->db->query($general_consul);
@@ -39,7 +44,7 @@ class Modelo{
         while($fila_contact = $resul_contact->FETCHALL(PDO::FETCH_ASSOC)) {
             $this->contacto[]=$fila_contact;
         }
-        echo "Contacto";
+        
         return $this->contacto;
 
     }

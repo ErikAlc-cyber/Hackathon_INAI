@@ -1,12 +1,18 @@
 <!DOCTYPE html>
-<html lang="es" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Menu Principal</title>
-    <link rel="stylesheet" href="../css/index.css">
-  </head>
-  <body>
-    <h1>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../static/vendor/fontawesome/css/font-awesome.min.css">
+
+  <title>Menu Principal</title>
+  
+  
+</head>
+<body>
+<h1>
     <table align="center">
       <td><img src="../../Documentacion/imagenes/titulo.png" alt="Logo" class="logo"></td>
       <td><p class="titulo">Menu Principal</p></td>
@@ -58,6 +64,19 @@
 
 ?>
 
+    <h2>Ordenar por:</h2>
+    
+    <h4>Matricula</h4>
+    <a href='views.php?col=id_vacante&order=asc'><i class='fa fa-arrow-circle-up' aria-hidden='true'></i></a>
+    
+    <a href='views.php?col=id_vacante&order=desc'>
+          <i class='fa fa-arrow-circle-down' aria-hidden='true'></i>
+          </a>
 
-  </body>
+    <h4>Estado</h4>
+    <a href='views.php?col=estado&order=asc'><i class='fa fa-arrow-circle-up' aria-hidden='true'></i></a>
+    <a href='views.php?col=estado&order=desc'><i class='fa fa-arrow-circle-down' aria-hidden='true'></i></a>
+    
+    
+</body>
 </html>

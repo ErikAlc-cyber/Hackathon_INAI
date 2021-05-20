@@ -12,6 +12,12 @@ class modeloController{
 		$dato = $vacantes->mostrar("VACANTE");
 		require_once("DNE.php");
     }
+
+	function vista_ordenada($orden, $columna){
+		$vacantes 	=	new Modelo();
+		$dato = $vacantes->mostrar("VACANTE","",$orden, $columna);
+		require_once("DNE.php");
+	}
 //MUESTRA DE LOS DATOS DE LA VACANTE
 	function mostrar_uno($id_vacante){
 		$vacante = new Modelo();
@@ -24,6 +30,8 @@ class modeloController{
 		$dato = $contacto->mostrar_contacto("CONTACTO","$id_contacto");
 		require_once("contacto.php");
 	}
+
+	
 
 	//MUESTRA DE LA VISTA INDEX
     function index(){
