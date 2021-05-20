@@ -76,6 +76,17 @@ div.menu{
   font-family: Tahoma, Verdana, sans-serif;
 }
 
+div.filtros{
+  border-radius: 5px;
+  background-color: #EE82EE;
+  color: white;
+  text-align: left;
+  font-size: 1vw;
+  font-weight: bold;
+  margin-top: 50px;
+  font-family: Tahoma, Verdana, sans-serif;
+}
+
 table.datos{
   border-collapse: collapse;
   margin-top: 50px;

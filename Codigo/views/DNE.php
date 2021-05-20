@@ -8,8 +8,8 @@
   <link rel="stylesheet" href="../static/vendor/fontawesome/css/font-awesome.min.css">
 
   <title>Menu Principal</title>
-  
-  
+
+
 </head>
 <body>
 <h1>
@@ -21,16 +21,17 @@
 
     <ul>
       <li><a href="../index.php">Pagina Principal</a></li>
-      <li><a href="views/views.php" class="active">DNE</a></li>
+      <li><a href="#" class="active">DNE</a></li>
       <li><a href="../../Documentacion/InvestigacionPNT.pdf">Porque del proyecto?</a></li>
       <li><a href="http://www.snt.org.mx/">Que es el PNT?</a></li>
       <li><a href="http://www.snt.org.mx/index.php/consejo-nacional/acuerdos">Que hace el PNT?</a></li>
       <li><a href="perfiles.html">Info. Creadores</a></li>
   </ul>
-  <div class="menu">
-      <p>Filtros:</p>
+  <div class="filtros">
+      <p align="center">Filtros:</p>
+
       <form action="DNE.php" method="post" id="filtro">
-        <label for="Estado">Estado:</label><br>
+        <h2><label for="Estado">Estado:</label><br></h2>
         <script>
           var x = document.createElement("SELECT");
           x.setAttribute("id", "mySelect");
@@ -43,11 +44,21 @@
           document.getElementById("mySelect").appendChild(z);
 
         </script>
-        <br>
-        <label for="Area">Id:</label><br>
-        <input type="text" id="txtId" value=""><br><br>
-        <button class="button">Buscar</button>
       </form>
+
+      <h2>Ordenar por:</h2>
+
+      <h4>Matricula</h4>
+      <a href='views.php?col=id_vacante&order=asc'><i class='fa fa-arrow-circle-up' aria-hidden='true'></i></a>
+
+      <a href='views.php?col=id_vacante&order=desc'>
+            <i class='fa fa-arrow-circle-down' aria-hidden='true'></i>
+            </a>
+
+      <h4>Estado</h4>
+      <a href='views.php?col=estado&order=asc'><i class='fa fa-arrow-circle-up' aria-hidden='true'></i></a>
+      <a href='views.php?col=estado&order=desc'><i class='fa fa-arrow-circle-down' aria-hidden='true'></i></a>
+
   </div>
 
 <?php
@@ -64,19 +75,5 @@
 
 ?>
 
-    <h2>Ordenar por:</h2>
-    
-    <h4>Matricula</h4>
-    <a href='views.php?col=id_vacante&order=asc'><i class='fa fa-arrow-circle-up' aria-hidden='true'></i></a>
-    
-    <a href='views.php?col=id_vacante&order=desc'>
-          <i class='fa fa-arrow-circle-down' aria-hidden='true'></i>
-          </a>
-
-    <h4>Estado</h4>
-    <a href='views.php?col=estado&order=asc'><i class='fa fa-arrow-circle-up' aria-hidden='true'></i></a>
-    <a href='views.php?col=estado&order=desc'><i class='fa fa-arrow-circle-down' aria-hidden='true'></i></a>
-    
-    
 </body>
 </html>

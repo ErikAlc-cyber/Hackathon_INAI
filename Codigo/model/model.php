@@ -6,7 +6,7 @@ class Modelo{
   //CONSTRUCTOR
     public function __construct(){
         $this->Modelo = array();
-        $this->db=new PDO('mysql:host=localhost;dbname=DNE',"root","");
+        $this->db=new PDO('mysql:host=157.245.222.210, 3306;dbname=DNE',"root","root");
 
     }
 //MUESTRA DE INFORMACION
@@ -44,8 +44,21 @@ class Modelo{
         while($fila_contact = $resul_contact->FETCHALL(PDO::FETCH_ASSOC)) {
             $this->contacto[]=$fila_contact;
         }
-        
+
         return $this->contacto;
+
+    }
+
+//MUESTRA LOS ESTADOS DE LA BD
+    public function mostar_estado($tabla){
+
+      $consul_contact="select 'Estado' from ".$tabla.";";
+      $resul_contact=$this->db->query($consul_contact);
+      while($fila_contact=$resul_contact->FETCHALL(PDO::FETCH_ASSOC)) {
+          $this->contacto[]=$fila_contact;
+      }
+
+      return $this->contacto;
 
     }
 
