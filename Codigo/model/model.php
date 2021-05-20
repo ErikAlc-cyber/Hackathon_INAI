@@ -30,7 +30,7 @@ class Modelo{
         }else{
             $general_consul = "select * from ".$tabla.";";
             $resu = $this->db->query($general_consul);
-            $this->vacantes = $resu->FETCHALL(PDO::FETCH_OBJ);
+            $this->vacantes = $resu->FETCHALL(PDO::FETCH_ASSOC);
 
             return $this->vacantes;
         }
