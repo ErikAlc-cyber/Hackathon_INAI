@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/index.css">
   <link rel="stylesheet" href="../static/vendor/fontawesome/css/font-awesome.min.css">
+
   <title>Menu Principal</title>
 
 
@@ -19,7 +20,7 @@
     </h1>
 
     <ul>
-      <li><a href="#home">Pagina Principal</a></li>
+      <li><a href="../index.php">Pagina Principal</a></li>
       <li><a href="views.php" class="active">DNE</a></li>
       <li><a href="../../Documentacion/InvestigacionPNT.pdf">Porque del proyecto?</a></li>
       <li><a href="http://www.snt.org.mx/">Que es el PNT?</a></li>
