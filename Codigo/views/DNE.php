@@ -14,7 +14,7 @@
 <body>
 <h1>
     <table align="center">
-      <td><img src="../../Documentacion/imagenes/titulo.png" alt="Logo" class="logo"></td>
+      <td><img src="../imagenes/titulo.png" alt="Logo" class="logo"></td>
       <td><p class="titulo">Menu Principal</p></td>
     </table>
     </h1>
@@ -22,7 +22,7 @@
     <ul>
       <li><a href="../index.php">Pagina Principal</a></li>
       <li><a href="views.php" class="active">DNE</a></li>
-      <li><a href="../../Documentacion/InvestigacionPNT.pdf">Porque del proyecto?</a></li>
+      <li><a href="../Documentacion/InvestigacionPNT.pdf">Porque del proyecto?</a></li>
       <li><a href="http://www.snt.org.mx/">Que es el PNT?</a></li>
       <li><a href="http://www.snt.org.mx/index.php/consejo-nacional/acuerdos">Que hace el PNT?</a></li>
       <li><a href="perfiles.html">Info. Creadores</a></li>
