@@ -14,7 +14,7 @@
 <body>
 <h1>
     <table align="center">
-      <td><img src="../../Documentacion/imagenes/titulo.png" alt="Logo" class="logo"></td>
+      <td><img src="../imagenes/titulo.png" alt="Logo" class="logo"></td>
       <td><p class="titulo">Menu Principal</p></td>
     </table>
     </h1>
@@ -27,25 +27,8 @@
       <li><a href="http://www.snt.org.mx/index.php/consejo-nacional/acuerdos">Que hace el PNT?</a></li>
       <li><a href="perfiles.html">Info. Creadores</a></li>
   </ul>
-  <div class="filtros">
+  <div class="menu">
       <p align="center">Filtros:</p>
-
-      <form action="DNE.php" method="post" id="filtro">
-        <h2><label for="Estado">Estado:</label><br></h2>
-        <script>
-          var x = document.createElement("SELECT");
-          x.setAttribute("id", "mySelect");
-          document.getElementById("filtro").appendChild(x);
-
-          var z = document.createElement("option");
-          z.setAttribute("value", "num1");
-          var t = document.createTextNode("Aguascalientes");
-          z.appendChild(t);
-          document.getElementById("mySelect").appendChild(z);
-
-        </script>
-      </form>
-
       <h2>Ordenar por:</h2>
 
       <h4>Matricula</h4>
@@ -58,7 +41,6 @@
       <h4>Estado</h4>
       <a href='views.php?col=estado&order=asc'><i class='fa fa-arrow-circle-up' aria-hidden='true'></i></a>
       <a href='views.php?col=estado&order=desc'><i class='fa fa-arrow-circle-down' aria-hidden='true'></i></a>
-
   </div>
 </body>
 </html>
