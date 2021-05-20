@@ -13,7 +13,7 @@ class Modelo{
     public function mostrar($tabla, $condicion = "", $orden = "", $columna=""){
         //CONDICION PARA MOESTRAR SOOLO UNO O MAS DATOS
         if($condicion != ""){
-            $consul_uniq="select id_vacante, Estado, Sujeto_Obligado, Fecha_Modif from ".$tabla." where id_vacante = ".$condicion.";";
+            $consul_uniq="select * from ".$tabla." where id_vacante = ".$condicion.";";
             $resul_uniq = $this->db->query($consul_uniq);
             while($fila = $resul_uniq->FETCHALL(PDO::FETCH_ASSOC)) {
                 $this->vacante[]=$fila;
@@ -22,13 +22,13 @@ class Modelo{
             return $this->vacante;
 
         }elseif($orden != "" && $columna != ""){
-            $general_consul_O = "select id_vacante, Estado, Sujeto_Obligado, Fecha_Modif from ".$tabla." ORDER BY ".$columna." ".$orden.";";
+            $general_consul_O = "select * from ".$tabla." ORDER BY ".$columna." ".$orden.";";
             $resu_O = $this->db->query($general_consul_O);
             $this->vacantes_O = $resu_O->FETCHALL(PDO::FETCH_ASSOC);
 
             return $this->vacantes_O;
         }else{
-            $general_consul = "select id_vacante, Estado, Sujeto_Obligado, Fecha_Modif from ".$tabla.";";
+            $general_consul = "select * from ".$tabla.";";
             $resu = $this->db->query($general_consul);
             $this->vacantes = $resu->FETCHALL(PDO::FETCH_ASSOC);
 
@@ -39,7 +39,7 @@ class Modelo{
 //MUESTRA DE LA INFORMACION DE CONTACTO SEGUN LA ID DE LA VACANTE
     public function mostrar_contacto($tabla, $id_contacto){
 
-        $consul_contact = "select id_vacante, Estado, Sujeto_Obligado, Fecha_Modif from ".$tabla." where id_contacto = ".$id_contacto.";";
+        $consul_contact = "select * from ".$tabla." where id_contacto = ".$id_contacto.";";
         $resul_contact = $this->db->query($consul_contact);
         while($fila_contact = $resul_contact->FETCHALL(PDO::FETCH_ASSOC)) {
             $this->contacto[]=$fila_contact;
