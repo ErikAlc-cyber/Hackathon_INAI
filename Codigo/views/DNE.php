@@ -29,25 +29,18 @@
   </ul>
   <div class="menu">
       <p>Filtros:</p>
-      <form action="DNE.php" method="post" id="filtro">
-        <label for="Estado">Estado:</label><br>
-        <script>
-          var x = document.createElement("SELECT");
-          x.setAttribute("id", "mySelect");
-          document.getElementById("filtro").appendChild(x);
+          <h2>Ordenar por:</h2>
 
-          var z = document.createElement("option");
-          z.setAttribute("value", "num1");
-          var t = document.createTextNode("Aguascalientes");
-          z.appendChild(t);
-          document.getElementById("mySelect").appendChild(z);
+          <h4>Matricula</h4>
+          <a href='views.php?col=id_vacante&order=asc'><i class='fa fa-arrow-circle-up' aria-hidden='true'></i></a>
 
-        </script>
-        <br>
-        <label for="Area">Id:</label><br>
-        <input type="text" id="txtId" value=""><br><br>
-        <button class="button">Buscar</button>
-      </form>
+          <a href='views.php?col=id_vacante&order=desc'>
+                <i class='fa fa-arrow-circle-down' aria-hidden='true'></i>
+                </a>
+
+          <h4>Estado</h4>
+          <a href='views.php?col=estado&order=asc'><i class='fa fa-arrow-circle-up' aria-hidden='true'></i></a>
+          <a href='views.php?col=estado&order=desc'><i class='fa fa-arrow-circle-down' aria-hidden='true'></i></a>
   </div>
 
 <?php
@@ -63,20 +56,6 @@
       echo "</table>";
 
 ?>
-
-    <h2>Ordenar por:</h2>
-
-    <h4>Matricula</h4>
-    <a href='views.php?col=id_vacante&order=asc'><i class='fa fa-arrow-circle-up' aria-hidden='true'></i></a>
-
-    <a href='views.php?col=id_vacante&order=desc'>
-          <i class='fa fa-arrow-circle-down' aria-hidden='true'></i>
-          </a>
-
-    <h4>Estado</h4>
-    <a href='views.php?col=estado&order=asc'><i class='fa fa-arrow-circle-up' aria-hidden='true'></i></a>
-    <a href='views.php?col=estado&order=desc'><i class='fa fa-arrow-circle-down' aria-hidden='true'></i></a>
-
 
 </body>
 </html>
