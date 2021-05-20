@@ -65,18 +65,20 @@
 ?>
 
     <h2>Ordenar por:</h2>
-
-    <h4>Matricula</h4>
+<div style="display: inline-block;">
+  <h4>Matricula</h4>
     <a href='views.php?col=id_vacante&order=asc'><i class='fa fa-arrow-circle-up' aria-hidden='true'></i></a>
 
     <a href='views.php?col=id_vacante&order=desc'>
           <i class='fa fa-arrow-circle-down' aria-hidden='true'></i>
           </a>
-
+</div>
+  
+<div style="display: inline-block;">
     <h4>Estado</h4>
     <a href='views.php?col=estado&order=asc'><i class='fa fa-arrow-circle-up' aria-hidden='true'></i></a>
     <a href='views.php?col=estado&order=desc'><i class='fa fa-arrow-circle-down' aria-hidden='true'></i></a>
-
+</div>
 
 </body>
 </html>
