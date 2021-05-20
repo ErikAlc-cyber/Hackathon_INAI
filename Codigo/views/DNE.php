@@ -21,7 +21,7 @@
 
     <ul>
       <li><a href="../index.php">Pagina Principal</a></li>
-      <li><a href="views/views.php" class="active">DNE</a></li>
+      <li><a href="views.php" class="active">DNE</a></li>
       <li><a href="../../Documentacion/InvestigacionPNT.pdf">Porque del proyecto?</a></li>
       <li><a href="http://www.snt.org.mx/">Que es el PNT?</a></li>
       <li><a href="http://www.snt.org.mx/index.php/consejo-nacional/acuerdos">Que hace el PNT?</a></li>
@@ -52,10 +52,10 @@
 
 <?php
 
-      echo '<table class="datos"> <tr> <th>Identificacion</th> <th>Nombre</th> <th>Ultima fecha disponible</th> <th>Mas informacion</th> <th>Elimina este registro</th> </tr>';
+      echo '<table class="datos"> <tr> <th>Identificacion</th> <th>Estado</th> <th>Nombre</th> <th>Ultima fecha disponible</th> <th>Mas informacion</th> <th>Elimina este registro</th> </tr>';
       foreach ($dato as $va ):
         //IMPORTANTE: Cuidado al modificar este enlace ya que envia el nombre del metodo y la id para mostrar al vacante a nuestro views.php   y asigne la vista correcta
-        echo "<tr><td><a href='views.php?m=mostrar_uno&id=".$va['id_vacante']."'>".$va['id_vacante']."</a></td><td>".$va['Sujeto_Obligado']."</td><td>S./".$va['Fecha_Modif']."</td>";
+        echo "<tr><td><a href='views.php?m=mostrar_uno&id=".$va['id_vacante']."'>".$va['id_vacante']."</a></td> <td>".$va['Estado']."</td> <td>".$va['Sujeto_Obligado']."</td><td>S./".$va['Fecha_Modif']."</td>";
 
         echo "<td><a href='views.php?m=mostrar_uno&id=".$va['id_vacante']."'>Mas Informacion</a></td> <td><a href='index.php?m=eliminar&id=".$va['id_vacante']."'>ELIMINAR</a></td>";
         echo "</tr>";
