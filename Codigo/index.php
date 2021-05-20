@@ -29,7 +29,7 @@
     <div>
 
       <video width="700" height="500" loop controls>
-        <source src="../Documentacion/recursos_extra/trabajo.mp4" type="video/mp4">
+        <source src="../Documentacion/recursos_extra/video.mp4" type="video/mp4">
       </video>
     </div>
   </body>
