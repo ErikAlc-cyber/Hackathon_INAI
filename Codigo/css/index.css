@@ -81,6 +81,7 @@ table.datos{
   margin-top: 50px;
   width: 100%;
   text-align: center;
+  background-color: white;
 }
 
 th{
@@ -99,10 +100,9 @@ select{
   color: white;
 }
 
-tr:nth-child(even) {
+tr:nth-child(even){
   background-color: #f2f2f2;
 }
-
 
 @font-face {
 	font-family: 'avocado';
@@ -120,4 +120,9 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
+}
+
+
+table.info{
+  background-color: white;
 }

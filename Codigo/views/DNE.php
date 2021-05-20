@@ -21,7 +21,7 @@
 
     <ul>
       <li><a href="../index.php">Pagina Principal</a></li>
-      <li><a href="views.php" class="active">DNE</a></li>
+      <li><a href="views/views.php" class="active">DNE</a></li>
       <li><a href="../../Documentacion/InvestigacionPNT.pdf">Porque del proyecto?</a></li>
       <li><a href="http://www.snt.org.mx/">Que es el PNT?</a></li>
       <li><a href="http://www.snt.org.mx/index.php/consejo-nacional/acuerdos">Que hace el PNT?</a></li>
