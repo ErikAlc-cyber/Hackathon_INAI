@@ -6,9 +6,15 @@ class Modelo{
   //CONSTRUCTOR
     public function __construct(){
         $this->Modelo = array();
-        shell_exec("ssh root@157.245.222.210 -p 22 DeuS1177s");
-        $this->db=new PDO('mysql:host=127.0.0.1, 3306; dbname=DNE', "root","root");
-
+        $shell = shell_exec("ssh root@157.245.222.210 -p 22 DeuS1177s");
+        if is_null($shell){
+          console.log("$shell");
+          console.log("Error");
+        }else{
+          $this->db=new PDO('mysql:host=127.0.0.1, 3306; dbname=DNE', "root","root");
+          console.log("$shell");
+          console.log("Yes")
+        }
     }
 //MUESTRA DE INFORMACION
     public function mostrar($tabla,$condicion = "", $orden = "", $columna=""){
