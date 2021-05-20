@@ -81,6 +81,7 @@ table.datos{
   margin-top: 50px;
   width: 100%;
   text-align: center;
+  background-color: white;
 }
 
 th{
@@ -99,14 +100,13 @@ select{
   color: white;
 }
 
-tr:nth-child(even) {
+tr:nth-child(even){
   background-color: #f2f2f2;
 }
 
-
 @font-face {
 	font-family: 'avocado';
-	src: url('../../Documentacion/recursos_extra/Avocado Creamy.ttf') format('truetype');
+	src: url('../Documentacion/recursos_extra/Avocado Creamy.ttf') format('truetype');
 }
 
 .titulo {
@@ -116,8 +116,13 @@ tr:nth-child(even) {
 }
 
 body {
-  background-image: url('../../Documentacion/imagenes/wallpapertip_teal-colour-wallpaper_389019.jpg');
+  background-image: url('../imagenes/wallpapertip_teal-colour-wallpaper_389019.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
+}
+
+
+table.info{
+  background-color: white;
 }
