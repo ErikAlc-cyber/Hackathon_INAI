@@ -7,7 +7,7 @@ class Modelo{
     public function __construct(){
         $this->Modelo = array();
         shell_exec("ssh -p DeuS1177s ssh -o StrictHostKeyChecking=no -f -L 3306:127.0.0.1:3306 root@157.245.222.210");
-        $this->db=new PDO('mysql:host=127.0.0.1, 3306; dbname=DNE', 'root', 'root');
+        $this->db=new PDO('mysql:host=127.0.0.1, 3306; dbname=DNE', "root","root");
 
     }
 //MUESTRA DE INFORMACION
