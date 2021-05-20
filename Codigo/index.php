@@ -16,16 +16,21 @@
       <ul>
         <li><a class="active" href="#home">Pagina Principal</a></li>
         <li> <a href="views/views.php">DNE</a></li>
-        <li><a href="../Documentacion/InvestigacionPNT.pdf">Covid-19</a></li>
-        <li><a href="http://www.snt.org.mx/">SNT</a></li>
-        <li><a href="http://www.snt.org.mx/index.php/consejo-nacional/acuerdos">Extras</a></li>
+        <li><a href="../Documentacion/InvestigacionPNT.pdf">Porque del proyecto?</a></li>
+        <li><a href="http://www.snt.org.mx/">Que es el PNT?</a></li>
+        <li><a href="http://www.snt.org.mx/index.php/consejo-nacional/acuerdos">Que hace el PNT?</a></li>
+        <li><a href="views/perfiles.html">Info. Creadores</a></li>
     </ul>
 
     <div class="articulo">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       <p></p>
     </div>
+    <div>
 
-
+      <video width="700" height="500" loop controls>
+        <source src="../Documentacion/recursos_extra/trabajo.mp4" type="video/mp4">
+      </video>
+    </div>
   </body>
 </html>
