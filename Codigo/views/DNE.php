@@ -7,8 +7,8 @@
   <link rel="stylesheet" href="../css/index.css">
   <link rel="stylesheet" href="../static/vendor/fontawesome/css/font-awesome.min.css">
   <title>Menu Principal</title>
-  
-  
+
+
 </head>
 <body>
 <h1>
@@ -64,10 +64,10 @@
 ?>
 
     <h2>Ordenar por:</h2>
-    
+
     <h4>Matricula</h4>
     <a href='views.php?col=id_vacante&order=asc'><i class='fa fa-arrow-circle-up' aria-hidden='true'></i></a>
-    
+
     <a href='views.php?col=id_vacante&order=desc'>
           <i class='fa fa-arrow-circle-down' aria-hidden='true'></i>
           </a>
@@ -75,7 +75,7 @@
     <h4>Estado</h4>
     <a href='views.php?col=estado&order=asc'><i class='fa fa-arrow-circle-up' aria-hidden='true'></i></a>
     <a href='views.php?col=estado&order=desc'><i class='fa fa-arrow-circle-down' aria-hidden='true'></i></a>
-    
-    
+
+
 </body>
 </html>
