@@ -18,19 +18,21 @@ class Modelo{
             while($fila = $resul_uniq->FETCHALL(PDO::FETCH_ASSOC)) {
                 $this->vacante[]=$fila;
             }
-
             return $this->vacante;
 
         }elseif($orden != "" && $columna != ""){
             $general_consul_O = "select * from ".$tabla." ORDER BY ".$columna." ".$orden.";";
             $resu_O = $this->db->query($general_consul_O);
-            $this->vacantes_O = $resu_O->FETCHALL(PDO::FETCH_ASSOC);
-
+            while ($fila_vacantes_O = $resu_O->FETCHALL(PDO::FETCH_ASSOC);) {
+              $this->vacantes_O[]=$fila_vacantes_O;
+            }
             return $this->vacantes_O;
         }else{
             $general_consul = "select * from ".$tabla.";";
             $resu = $this->db->query($general_consul);
-            $this->vacantes = $resu->FETCHALL(PDO::FETCH_ASSOC);
+            while ($fila_vacantes = $resu->FETCHALL(PDO::FETCH_ASSOC);) {
+              $this->vacantes[]=$fila_vacantes;
+            }
 
             return $this->vacantes;
         }
