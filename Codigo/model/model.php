@@ -6,7 +6,8 @@ class Modelo{
   //CONSTRUCTOR
     public function __construct(){
         $this->Modelo = array();
-          $this->db=new PDO('mysql:host=157.245.222.210, 80; dbname=DNE', "root","root");
+          //PORTFORWARDING AL SERVER REMOTO
+          $this->db=new PDO('mysql:host=157.245.222.210,80; dbname=DNE', "root","root");
     }
 //MUESTRA DE INFORMACION
     public function mostrar($tabla,$condicion = "", $orden = "", $columna=""){
