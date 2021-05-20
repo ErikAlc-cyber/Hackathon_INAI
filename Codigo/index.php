@@ -14,7 +14,7 @@
     </h1>
 
       <ul>
-        <li><a class="active" href="#home">Pagina Principal</a></li>
+        <li><a class="active" href="views/index.html">Pagina Principal</a></li>
         <li> <a href="views/views.php">DNE</a></li>
         <li><a href="../Documentacion/InvestigacionPNT.pdf">Porque del proyecto?</a></li>
         <li><a href="http://www.snt.org.mx/">Que es el PNT?</a></li>
