@@ -30,7 +30,7 @@ class Modelo{
         }else{
             $general_consul = "select * from ".$tabla.";";
             $resu = $this->db->query($general_consul);
-            $this->vacantes = $resu->FETCHALL(PDO::FETCH_ASSOC);
+            $this->vacantes = $resu->pgsqlCopyToArray($tabla);
 
             return $this->vacantes;
         }
