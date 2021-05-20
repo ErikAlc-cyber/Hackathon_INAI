@@ -8,7 +8,7 @@
   <body>
     <h1>
     <table align="center" class="titulo">
-      <td><img src="../Documentacion/imagenes/titulo.png" alt="Logo" class="logo"></td>
+      <td><img src="imagenes/titulo.png" alt="Logo" class="logo"></td>
       <td><p class="titulo">Directorio Nacional de Empleo</p></td>
     </table>
     </h1>
@@ -16,7 +16,7 @@
       <ul>
         <li><a class="active" href="views/index.html">Pagina Principal</a></li>
         <li> <a href="views/views.php">DNE</a></li>
-        <li><a href="../Documentacion/InvestigacionPNT.pdf">Porque del proyecto?</a></li>
+        <li><a href="Documentacion/InvestigacionPNT.pdf">Porque del proyecto?</a></li>
         <li><a href="http://www.snt.org.mx/">Que es el PNT?</a></li>
         <li><a href="http://www.snt.org.mx/index.php/consejo-nacional/acuerdos">Que hace el PNT?</a></li>
         <li><a href="views/perfiles.html">Info. Creadores</a></li>
@@ -29,7 +29,7 @@
     <div>
 
       <video width="700" height="500" loop controls>
-        <source src="../Documentacion/recursos_extra/video.mp4" type="video/mp4">
+        <source src="Documentacion/recursos_extra/video.mp4" type="video/mp4">
       </video>
     </div>
   </body>
