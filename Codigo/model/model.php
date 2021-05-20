@@ -6,15 +6,8 @@ class Modelo{
   //CONSTRUCTOR
     public function __construct(){
         $this->Modelo = array();
-<<<<<<< HEAD
           //PORTFORWARDING AL SERVER REMOTO
           $this->db=new PDO('pgsql:host=app-278688fa-10dd-478a-9146-e68f61bc710f-do-user-8741944-0.b.db.ondigitalocean.com; port=25060; dbname=dne; user=dne; password=ohreisgk1e3hbuk9');
-=======
-        //$this->db=new PDO('mysql:host=localhost; dbname=DNE',"root","");
-
-          //PORTFORWARDING AL SERVER REMOTO
-        $this->db=new PDO('pgsql:host=app-278688fa-10dd-478a-9146-e68f61bc710f-do-user-8741944-0.b.db.ondigitalocean.com; port=25060; dbname=dne; user=dne; password=ohreisgk1e3hbuk9');
->>>>>>> 74017f1eea0c8b69ec6e55a7399aad28d36b46f3
     }
 //MUESTRA DE INFORMACION
     public function mostrar($tabla, $condicion = "", $orden = "", $columna=""){
