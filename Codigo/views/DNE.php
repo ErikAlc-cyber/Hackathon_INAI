@@ -46,7 +46,6 @@
 
   <?php
     echo '<table class="datos"> <tr> <th>Identificacion</th> <th>Estado</th> <th>Nombre</th> <th>Ultima fecha disponible</th> <th>Mas informacion</th> <th>Elimina este registro</th> </tr>';
-    foreach ($dato as $key => $value)
     foreach ($value as $va ):
     //IMPORTANTE: Cuidado al modificar este enlace ya que envia el nombre del metodo y la id para mostrar al vacante a nuestro views.php   y asigne la vista correcta
       echo "<tr><td><a href='views.php?m=mostrar_uno&id=".$va['id_vacante']."'>".$va['id_vacante']."</a></td> <td>".$va['Estado']."</td> <td>".$va['Sujeto_Obligado']."</td> <td>S./".$va['Fecha_Modif']."</td>";
