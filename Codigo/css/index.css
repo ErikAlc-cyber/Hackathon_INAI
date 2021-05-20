@@ -81,6 +81,7 @@ table.datos{
   margin-top: 50px;
   width: 100%;
   text-align: center;
+  background-color: white;
 }
 
 th{
@@ -103,10 +104,6 @@ tr:nth-child(even){
   background-color: #f2f2f2;
 }
 
-tr:nth-child(odd){
-  background-color: white;
-}
-
 @font-face {
 	font-family: 'avocado';
 	src: url('../../Documentacion/recursos_extra/Avocado Creamy.ttf') format('truetype');
@@ -123,4 +120,9 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
+}
+
+
+table.info{
+  background-color: white;
 }

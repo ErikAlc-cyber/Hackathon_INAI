@@ -7,7 +7,7 @@
   </head>
   <body>
     <h1>
-    <table align="center">
+    <table align="center" class="titulo">
       <td><img src="../Documentacion/imagenes/titulo.png" alt="Logo" class="logo"></td>
       <td><p class="titulo">Directorio Nacional de Empleo</p></td>
     </table>
