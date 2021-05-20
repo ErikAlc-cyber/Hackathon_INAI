@@ -15,7 +15,7 @@ class Modelo{
         if($condicion != ""){
             $consul_uniq="select * from ".$tabla." where id_vacante = ".$condicion.";";
             $resul_uniq = $this->db->query($consul_uniq);
-            while($fila = $resul_uniq->FETCHALL(PDO::FETCH_OBJ)) {
+            while($fila = $resul_uniq->FETCHALL(PDO::FETCH_ASSOC)) {
                 $this->vacante[]=$fila;
             }
 
@@ -24,13 +24,13 @@ class Modelo{
         }elseif($orden != "" && $columna != ""){
             $general_consul_O = "select * from ".$tabla." ORDER BY ".$columna." ".$orden.";";
             $resu_O = $this->db->query($general_consul_O);
-            $this->vacantes_O = $resu_O->FETCHALL(PDO::FETCH_OBJ);
+            $this->vacantes_O = $resu_O->FETCHALL(PDO::FETCH_ASSOC);
 
             return $this->vacantes_O;
         }else{
             $general_consul = "select * from ".$tabla.";";
             $resu = $this->db->query($general_consul);
-            $this->vacantes = $resu->FETCHALL(PDO::FETCH_OBJ);
+            $this->vacantes = $resu->FETCHALL(PDO::FETCH_ASSOC);
 
             return $this->vacantes;
         }
@@ -41,7 +41,7 @@ class Modelo{
 
         $consul_contact="select * from ".$tabla." where id_contacto = ".$id_contacto.";";
         $resul_contact = $this->db->query($consul_contact);
-        while($fila_contact = $resul_contact->FETCHALL(PDO::FETCH_OBJ)) {
+        while($fila_contact = $resul_contact->FETCHALL(PDO::FETCH_ASSOC)) {
             $this->contacto[]=$fila_contact;
         }
 
